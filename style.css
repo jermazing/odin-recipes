@@ -3,55 +3,92 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0px;
+    min-width: 480px;
+}
+
 body, .description{
     background-color: aliceblue;
+    
+}
+
+.navbar {
+    display: block;
+    background-color: rgb(164, 211, 252);
+    margin: 0px;
+    text-align: center;
+}
+
+#author {
+    margin: 0px;
+    padding: 0px;
 }
 
 a {
     text-decoration: none;
 }
 
-h1 {
-    text-align: center;
-    font-size: 44px;
-    background-color: gainsboro;
-    font-weight: bold;
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
 }
 
 
-.container {
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    background-color: rgb(108, 136, 101);
+    font-weight: bold;
+    width: 50%;
+    margin: 8px auto;
+}
+
+
+#linkcontainer, .container, .summary {
     text-align: center;
 }
 
 .container.description {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-#recipeUL {
-    display: inline-block;
-    list-style: none;
-    font-size: 32px;
-}
-
-#recipeUL .recipeLI {
-    margin-bottom: 5px;
-    font-size: 32px;
-    background-color: lightpink;
-}
-
-
-
-.center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600px;
+    font-size: 20px;
+    margin: 8px auto;
 }
+
+.container {
+    
+}
+
+.description {
+    max-width: 600px;
+    text-align: left;
+}
+
+
+
+.recipeLink {
+    display:block;
+    font-size: 32px;
+    margin: 8px auto;
+    background-color: lightgoldenrodyellow;
+    font-weight: lighter;
+    width: 350px;
+}
+
+.recipeLink:hover {
+    background-color: rgb(212, 255, 131);
+ }
 
 img {
     max-height: 300px;
-    width: auto
-
+    width: auto;
+    display: block;
+    margin: 8px auto;
 }
 
 ul, ol {
@@ -59,11 +96,17 @@ ul, ol {
     font-size: 20px;
 }
 
-h3 {
-    font-size: 32px;
-    background-color: aquamarine;
-    margin-bottom: 10px
+.summary, .sectionheader {
+    font-size: 28px;
+    margin: 10px auto;
 }
+
+.sectionheader {
+    background-color: aquamarine;
+    width:75%;
+    
+}
+
 
 li {
     text-align: left;
